@@ -33,7 +33,6 @@ conda search holoviews --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
