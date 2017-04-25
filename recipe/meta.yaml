@@ -1,13 +1,13 @@
-{% set version = "1.6.2" %}
+{% set version = "1.7.0" %}
 
 package:
   name: holoviews
   version: {{ version }}
 
 source:
-  fn: v{{version}}.tar.gz
+  fn: holoviews-{{version}}.zip
   url: https://github.com/ioam/holoviews/archive/v{{version}}.tar.gz
-  sha256: 5162d06cfd1c9b21ea9eac3883e5bae6d06c899d06486105f182df7940b97a21
+  sha256: c599716bc5ac7d9c342a3b8df35c2e9cbe2d349daef524d263e1ee4e33245ce8
 
 
 build:
@@ -40,8 +40,8 @@ about:
   summary: Stop plotting your data - annotate your data and let it visualize itself.
   license: BSD 3-Clause
 
-
 extra:
   recipe-maintainers:
     - jlstevens
     - philippjfr
+    - basnijholt
