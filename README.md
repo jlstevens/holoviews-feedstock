@@ -11,6 +11,18 @@ Summary: Stop plotting your data - annotate your data and let it visualize itsel
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/holoviews-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/holoviews-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/holoviews-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/holoviews-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/holoviews-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/holoviews-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/holoviews/badges/version.svg)](https://anaconda.org/conda-forge/holoviews)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/holoviews/badges/downloads.svg)](https://anaconda.org/conda-forge/holoviews)
+
 Installing holoviews
 ====================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/holoviews-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/holoviews-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/holoviews-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/holoviews-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/holoviews-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/holoviews-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/holoviews/badges/version.svg)](https://anaconda.org/conda-forge/holoviews)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/holoviews/badges/downloads.svg)](https://anaconda.org/conda-forge/holoviews)
 
 
 Updating holoviews-feedstock
