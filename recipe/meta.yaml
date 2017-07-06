@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - python
+    - numpy
     - param
     - setuptools
   run:
