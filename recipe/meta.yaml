@@ -1,4 +1,4 @@
-{% set version = "1.8.2" %}
+{% set version = "1.8.3" %}
 
 package:
   name: holoviews
@@ -7,7 +7,7 @@ package:
 source:
   fn: holoviews-{{ version }}.tar.gz
   url: https://github.com/ioam/holoviews/archive/v{{version}}.tar.gz
-  sha256: 372ad70308bec0b94b367ee9a1cd12a2cb79fa0353672d880f0ece82a6deb77d
+  sha256: 8dccd4f37e9c5bfc77dc74897e90afccbdbaf1568749a26c6691ce45ddd67ee9
 
 build:
   number: 0
