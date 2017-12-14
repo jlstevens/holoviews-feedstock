@@ -1,4 +1,4 @@
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 
 package:
   name: holoviews
@@ -7,7 +7,7 @@ package:
 source:
   fn: holoviews-{{ version }}.tar.gz
   url: https://github.com/ioam/holoviews/archive/v{{version}}.tar.gz
-  sha256: 3ca28fb5eedc8596cfb788a37f90736e208b5f65976bcf48790264deedd492fb
+  sha256: 0dab43fa913597577c8fe9c19aa1f4bc62b67cd7524c3ec4bbd1577718eeba38
 
 build:
   number: 0
@@ -29,7 +29,6 @@ requirements:
     - jupyter
     - notebook
     - ipython
-    - lancet
 
 test:
   imports:
