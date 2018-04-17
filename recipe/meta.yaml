@@ -1,4 +1,4 @@
-{% set version = "1.9.5" %}
+{% set version = "1.10.0" %}
 
 package:
   name: holoviews
@@ -6,10 +6,11 @@ package:
 
 source:
   fn: holoviews-{{ version }}.tar.gz
-  url: https://github.com/ioam/holoviews/archive/v{{version}}.tar.gz
-  sha256: 89bdf9708ab58b43d4c690846867be5559a9cb4b7c215611db646ed3d54c4169
+  url: https://pypi.io/packages/source/h/holoviews/holoviews-{{ version }}.tar.gz
+  sha256: 685ade8873d32d456baf13d655b7f027f3117808f384a982320867a16a10027b
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
