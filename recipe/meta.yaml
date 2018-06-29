@@ -1,4 +1,4 @@
-{% set version = "1.10.5" %}
+{% set version = "1.10.6" %}
 
 package:
   name: holoviews
@@ -7,7 +7,7 @@ package:
 source:
   fn: holoviews-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/h/holoviews/holoviews-{{ version }}.tar.gz
-  sha256: 6470834430bfe80aa292c22edf0fa3d9744a1882ae2461cd4394b3eb246f2894
+  sha256: dbb8855e66f71a751ab16c31f7991086518e0287b472f816782910c80b8287a5
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - param >=1.6.1,<2.0
     - numpy >=1.0
     - matplotlib >=2.1
-    - bokeh >=0.12.15,<=0.12.16
+    - bokeh >=0.12.15,<=0.13.0
     - jupyter
     - notebook
     - ipython >=5.4.0
