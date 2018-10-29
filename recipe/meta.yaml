@@ -5,14 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: holoviews-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/h/holoviews/holoviews-{{ version }}.tar.gz
   sha256: 2ce380ed1f678efadbeb3c376e2b90f7bd67e489db6f308c2d5abefabc37b36a
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 
 requirements:
