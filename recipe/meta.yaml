@@ -5,12 +5,16 @@ package:
   version: {{ version }}
 
 source:
-  url: https://assets.holoviews.org/packages/holoviews-1.10.9.tar.gz
+  url: https://assets.holoviews.org/packages/holoviews-{{ version }}.tar.gz
   sha256: 07103bff532aad93669e55527e69886aeec1dbf3998ab3eb1b11edb15a146aff
+  patches:
+    # Already merged, can be dropped with the next release
+    # https://github.com/ioam/holoviews/pull/3119/files
+    - backport_3119.patch
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 
