@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 package:
   name: holoviews
@@ -6,13 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/holoviews/holoviews-{{ version }}.tar.gz
-  sha256: 247d05923d42767b5b0785f59be640712467178ba671657b3587d9e38f69a2a8
+  sha256: daddbfd86ae782c09fe53c5a8f6d551b6d04a90038a0c653e4769d18f2cfc662
 
 build:
   noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
-
+  entry_points:
+    - holoviews = holoviews.util.command:main
 
 requirements:
   host:
@@ -27,7 +28,7 @@ requirements:
     - bokeh >=1.0.0,<1.1.0
     - jupyter
     - notebook
-    - ipython >=5.4.0
+    - ipython >=5.4.0,<=7.1.1  # <=7.1.1 due to tab completion regression
     - pyviz_comms >=0.7.0
 
 test:
