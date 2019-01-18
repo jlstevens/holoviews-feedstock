@@ -34,6 +34,8 @@ requirements:
 test:
   imports:
     - holoviews
+  commands:
+    - holoviews -h
 
 about:
   home: www.holoviews.org
